@@ -1,0 +1,57 @@
+{
+  "id": "MAP_BIG_RIDGE",
+  "name": "Big_Ridge",
+  "layout": "LAYOUT_ROUTE_B",
+  "music": "MUS_RG_PEWTER",
+  "region_map_section": "MAPSEC_ROUTE_102",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_CANTERBURY_TOWN",
+      "offset": -6,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_BOLSHAN_CITY",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_MIRA_RIVER",
+      "offset": 12,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 39,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_MIRA_RIVER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_MIRA_RIVER",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

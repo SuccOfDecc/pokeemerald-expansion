@@ -1,0 +1,18 @@
+mapscripts RockdaleCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION RockdaleRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script RockdaleRespawn{
+    setrespawn(HEAL_LOCATION_ROCKDALE)
+    end
+}
+
+script RockdaleCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

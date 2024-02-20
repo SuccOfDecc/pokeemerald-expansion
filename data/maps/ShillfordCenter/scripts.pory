@@ -1,0 +1,18 @@
+mapscripts ShillfordCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION ShillfordRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script ShillfordRespawn{
+    setrespawn(HEAL_LOCATION_SHILLFORD)
+    end
+}
+
+script ShillfordCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

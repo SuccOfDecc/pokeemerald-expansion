@@ -1,0 +1,47 @@
+{
+  "id": "MAP_ROCKDALE",
+  "name": "Rockdale",
+  "layout": "LAYOUT_Rockdale",
+  "music": "MUS_RG_FUCHSIA",
+  "region_map_section": "MAPSEC_ROUTE_130",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_WEST_OCEAN",
+      "offset": -2,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 30,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_ROCKY_ROAD",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_ROCKDALE_CENTER",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

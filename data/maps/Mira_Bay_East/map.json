@@ -1,0 +1,54 @@
+{
+  "id": "MAP_MIRA_BAY_EAST",
+  "name": "Mira_Bay_East",
+  "layout": "LAYOUT_BAY_RIVER_A",
+  "music": "MUS_RG_SS_ANNE",
+  "region_map_section": "MAPSEC_DEWFORD_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_EAST_OCEAN",
+      "offset": 69,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_EAST_OCEAN",
+      "offset": 69,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_BOLSHAN_CITY",
+      "offset": 30,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_MIRA_RIVER",
+      "offset": 1,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_WADDENS_COVE",
+      "offset": 50,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

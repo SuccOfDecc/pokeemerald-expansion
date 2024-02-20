@@ -1,0 +1,4 @@
+raw `
+EastOcean_MapScripts::
+	.byte 0
+`

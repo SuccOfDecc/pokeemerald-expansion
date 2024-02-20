@@ -1,0 +1,18 @@
+mapscripts SandfieldCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION SandfieldRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script SandfieldRespawn{
+    setrespawn(HEAL_LOCATION_SANDFIELD)
+    end
+}
+
+script SandfieldCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

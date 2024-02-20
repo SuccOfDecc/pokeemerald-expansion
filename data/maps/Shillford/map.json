@@ -1,0 +1,59 @@
+{
+  "id": "MAP_SHILLFORD",
+  "name": "Shillford",
+  "layout": "LAYOUT_Shillford",
+  "music": "MUS_DEWFORD",
+  "region_map_section": "MAPSEC_SOOTOPOLIS_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_WEST_OCEAN",
+      "offset": 13,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_MIRA_BAY_WEST",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 26,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_CRAB_CAVE_A",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 11,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_GYM2SHILLFORD",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_SHILLFORD_CENTER",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

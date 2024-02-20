@@ -1,0 +1,85 @@
+raw `
+	.byte 0
+`
+mapscripts Portree_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_D_GET_OFF_BOAT, 0: OffTheBoatPortree]
+}
+
+script OffTheBoatPortree{
+	setvar(VAR_D_GET_OFF_BOAT, 1)
+	clearflag(FLAG_GOT_STARTER)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+	waitmovement(0)
+	msgbox("Welcome to the island!\nThis is placeholder text!")
+	closemessage
+	applymovement (OBJ_EVENT_ID_PLAYER, PlayerOffBoatPortree)
+	applymovement (1, GuyOffBoatPortree)
+	waitmovement(0)
+	opendoor(30, 10)
+	waitdooranim
+	applymovement(1, GuyEnterStarterHousePortree)
+	waitmovement(0)
+	removeobject(1)
+	applymovement (OBJ_EVENT_ID_PLAYER, PlayerEnterStarterHousePortree)
+	waitmovement(0)
+	warp(MAP_PORTREE_STARTER_HOUSE, 0)
+}
+
+movement PlayerOffBoatPortree{
+	walk_up * 5
+	walk_right * 12
+	walk_up * 1
+}
+
+movement GuyOffBoatPortree{
+	walk_up * 3
+	walk_right * 12
+	walk_up * 3
+}
+
+movement GuyEnterStarterHousePortree{
+	walk_up
+}
+
+movement PlayerEnterStarterHousePortree{
+	walk_up * 3
+}
+
+movement SailorGetOnVictoryBoat{
+	walk_down
+}
+
+movement PlayerGetOnVictoryBoat{
+	walk_down * 2
+}
+
+script PortreeTalkToSailor{
+	if(flag(FLAG_ALL_BADGES)){
+		lockall
+		msgbox("Looks like you've been busy!\p""Get in!\n""You're going to Victory Road.")
+		waitmessage
+		closemessage
+		applymovement(2, SailorGetOnVictoryBoat)
+		waitmovement(0)
+		removeobject(2)
+		applymovement(OBJ_EVENT_ID_PLAYER, PlayerGetOnVictoryBoat)
+		warp(MAP_VICTORY_ROAD)
+	}
+	else{
+		lockall
+		msgbox("This boat will take you to\n""Victory Road!\n""... come back with 8 badges")
+		releaseall
+	}
+}
+
+script FlySign{
+	if(flag(FLAG_THIRD_BADGE)){
+		call(CB2_OpenFlyMap)
+	}
+	else{
+		lockall
+		msgbox("The badge from Waddens Cove\n""allows you to fly to other towns")
+		releaseall
+	}
+}

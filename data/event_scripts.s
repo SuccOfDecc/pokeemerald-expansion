@@ -1067,3 +1067,127 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/Portree/scripts.inc"
+
+	.include "data/maps/Bolshan_Path/scripts.inc"
+
+	.include "data/maps/Bolshan_City/scripts.inc"
+
+	.include "data/maps/Big_Ridge/scripts.inc"
+
+	.include "data/maps/Canterbury_Town/scripts.inc"
+
+	.include "data/maps/Portree_Forest/scripts.inc"
+
+	.include "data/maps/Mira_River/scripts.inc"
+
+	.include "data/maps/Mira_Bay_East/scripts.inc"
+
+	.include "data/maps/Mira_Bay_West/scripts.inc"
+
+	.include "data/maps/Shillford/scripts.inc"
+
+	.include "data/maps/Crab_CaveA/scripts.inc"
+
+	.include "data/maps/Crab_CaveB/scripts.inc"
+
+	.include "data/maps/WestOcean/scripts.inc"
+
+	.include "data/maps/Rockdale/scripts.inc"
+
+	.include "data/maps/Rocky_Road/scripts.inc"
+
+	.include "data/maps/Bretona_Dunes/scripts.inc"
+
+	.include "data/maps/Sandfield/scripts.inc"
+
+	.include "data/maps/Waddens_Cove/scripts.inc"
+
+	.include "data/maps/EastOcean/scripts.inc"
+
+	.include "data/maps/Stormy_Field/scripts.inc"
+
+	.include "data/maps/Arrina_Town/scripts.inc"
+
+	.include "data/maps/Spooky_Forest/scripts.inc"
+
+	.include "data/maps/SpookyHouse/scripts.inc"
+
+	.include "data/maps/Hot_Valley/scripts.inc"
+
+	.include "data/maps/Dunning_Hill/scripts.inc"
+
+	.include "data/maps/Donkin_Run/scripts.inc"
+
+	.include "data/maps/Skaw_Ridge/scripts.inc"
+
+	.include "data/maps/Cape_Skaw/scripts.inc"
+
+	.include "data/maps/Donkin_Town/scripts.inc"
+
+	.include "data/maps/DragonCave/scripts.inc"
+
+	.include "data/maps/SandCaveA/scripts.inc"
+
+	.include "data/maps/SandCaveB/scripts.inc"
+
+	.include "data/maps/Corrin_Island/scripts.inc"
+
+	.include "data/maps/LeagueIsland/scripts.inc"
+
+	.include "data/maps/VictoryRoad/scripts.inc"
+
+	.include "data/maps/Waddens_Woods/scripts.inc"
+
+	.include "data/maps/InsideBoat/scripts.inc"
+
+	.include "data/maps/PortreeStarterHouse/scripts.inc"
+
+	.include "data/maps/Gym1Canterbury/scripts.inc"
+
+	.include "data/maps/Gym2Shillford/scripts.inc"
+
+	.include "data/maps/Gym3Wadden/scripts.inc"
+
+	.include "data/maps/Gym4Arrina/scripts.inc"
+
+	.include "data/maps/Gym5Sandfield/scripts.inc"
+
+	.include "data/maps/Gym6Corrin/scripts.inc"
+
+	.include "data/maps/Gym7Skaw/scripts.inc"
+
+	.include "data/maps/Gym8Donkin/scripts.inc"
+
+	.include "data/maps/PortreeNameRater/scripts.inc"
+
+	.include "data/maps/PortreeMoveRelearner/scripts.inc"
+
+	.include "data/maps/PortreeCenter/scripts.inc"
+
+	.include "data/maps/PortreeMart/scripts.inc"
+
+	.include "data/maps/BolshanCenter/scripts.inc"
+
+	.include "data/maps/ShillfordCenter/scripts.inc"
+
+	.include "data/maps/RockdaleCenter/scripts.inc"
+
+	.include "data/maps/WaddensCenter/scripts.inc"
+
+	.include "data/maps/SandfieldCenter/scripts.inc"
+
+	.include "data/maps/DunningCenter/scripts.inc"
+
+	.include "data/maps/SkawCenter/scripts.inc"
+
+	.include "data/maps/DonkinCenter/scripts.inc"
+
+	.include "data/maps/CorrinCenter/scripts.inc"
+
+	.include "data/maps/ArrinaCenter/scripts.inc"
+
+	.include "data/maps/MiraCenter/scripts.inc"
+
+	.include "data/maps/CanterburyCenter/scripts.inc"

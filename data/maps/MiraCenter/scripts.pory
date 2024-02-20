@@ -1,0 +1,18 @@
+mapscripts MiraCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION MiraRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script MiraRespawn{
+    setrespawn(HEAL_LOCATION_MIRA_RIVER)
+    end
+}
+
+script MiraCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

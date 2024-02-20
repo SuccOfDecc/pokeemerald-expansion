@@ -1,0 +1,18 @@
+mapscripts PortreeCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION PortreeRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script PortreeRespawn{
+    setrespawn(HEAL_LOCATION_PORTREE)
+    end
+}
+
+script PortreeCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

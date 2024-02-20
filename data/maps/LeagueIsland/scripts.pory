@@ -1,0 +1,4 @@
+raw `
+LeagueIsland_MapScripts::
+	.byte 0
+`

@@ -1,0 +1,47 @@
+{
+  "id": "MAP_CANTERBURY_TOWN",
+  "name": "Canterbury_Town",
+  "layout": "LAYOUT_Canterbury_Town",
+  "music": "MUS_RG_FUCHSIA",
+  "region_map_section": "MAPSEC_DEWFORD_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_BIG_RIDGE",
+      "offset": 6,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 20,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_GYM1CANTERBURY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_CANTERBURY_CENTER",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

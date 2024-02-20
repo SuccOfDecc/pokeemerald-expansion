@@ -1,0 +1,4 @@
+raw `
+WestOcean_MapScripts::
+	.byte 0
+`

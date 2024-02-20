@@ -1,0 +1,71 @@
+{
+  "id": "MAP_MIRA_RIVER",
+  "name": "Mira_River",
+  "layout": "LAYOUT_Mira_River",
+  "music": "MUS_RG_POKE_MANSION",
+  "region_map_section": "MAPSEC_DEWFORD_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_MIRA_BAY_WEST",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_MIRA_BAY_EAST",
+      "offset": -1,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_BIG_RIDGE",
+      "offset": -12,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 27,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_BIG_RIDGE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_BIG_RIDGE",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 8,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_CRAB_CAVE_B",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_MIRA_CENTER",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

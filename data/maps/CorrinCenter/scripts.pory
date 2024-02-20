@@ -1,0 +1,18 @@
+mapscripts CorrinCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION CorrinRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script CorrinRespawn{
+    setrespawn(HEAL_LOCATION_CORRIN_ISLAND)
+    end
+}
+
+script CorrinCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

@@ -1,0 +1,28 @@
+mapscripts Arrina_Town_MapScripts {
+}
+
+script ArrinaFerrySailor{
+	if(flag(FLAG_FOURTH_BADGE)){
+		msgbox("I run the ferry here!\n""Well...\p""...okay fine it's a tiny\n""little sailboat...\p"
+		"Do you want to go to Corrin Island?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			lockall
+			msgbox("Great!\p""All aboard the Corrin Express!")
+			closemessage
+			warp(MAP_CORRIN_ISLAND, 2)
+		}
+		else{
+			msgbox("Come back when you're ready.")
+			closemessage
+			releaseall
+		}
+	}
+	else{
+		lockall
+		msgbox("I run the ferry here!\n""Well...\p""...okay fine it's a tiny\n""little sailboat...\p"
+		"But you need this city's\n""gym badge first.")
+		releaseall
+	}
+	
+
+}

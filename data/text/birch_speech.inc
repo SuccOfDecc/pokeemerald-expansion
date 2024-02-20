@@ -1,31 +1,32 @@
 gText_Birch_Welcome::
 	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "Welcome to the Island of Bretona\p"
+	.string "My name is Decc.\p"
+	.string "I'll be your welcome guide here.\p"
+	.string "\n"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
+	.string "Check out this sweet ball\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
+	.string "Our island here is very unique,\n"
+	.string "and is home to hundreds of\l"
+	.string "species of POKéMON.\p"
+	.string "While there are lots of wild\n"
+	.string "POKéMON here, there are not so\l"
+	.string "many people on Bretona.\p"
+	.string "However, the thirst for battles\n"
+	.string "is stronger than anywhere else!\p"
+	.string "The gym leaders here are no\n"
+	.string "slouches. They take their roles\l"
+	.string "very seriously, and it shows.\p"
+	.string "The only way to succeed here is\n"
+	.string "using careful strategy, or\l"
+	.string "using complete choas\p"
+	.string "\n"
 	.string "$"
 
 gText_Birch_AndYouAre::
@@ -36,16 +37,16 @@ gText_Birch_BoyOrGirl::
 	.string "Or are you a girl?$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
-	.string "What's your name?$"
+	.string "Right then,\n"
+	.string "what's your name?$"
 
 gText_Birch_SoItsPlayer::
 	.string "So it's {PLAYER}{KUN}?$"
 
 gText_Birch_YourePlayer::
 	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
+	.string "You're {PLAYER}{KUN} who's taking\n"
+	.string "the Pokemon League Challenge.\n"
 	.string "I get it now!\p"
 	.string "$"
 
@@ -56,6 +57,6 @@ gText_Birch_AreYouReady::
 	.string "Take courage, and leap into the\n"
 	.string "world of POKéMON where dreams,\l"
 	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
+	.string "Well, I'll see you soon.\n"
+	.string "I'll be waiting at the docks!\p"
 	.string "$"

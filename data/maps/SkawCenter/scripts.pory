@@ -1,0 +1,18 @@
+mapscripts SkawCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION CapeSkawRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script CapeSkawRespawn{
+    setrespawn(HEAL_LOCATION_CAPE_SKAW)
+    end
+}
+
+script SkawCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

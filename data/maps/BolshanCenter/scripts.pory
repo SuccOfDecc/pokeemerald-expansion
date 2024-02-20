@@ -1,0 +1,18 @@
+mapscripts BolshanCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION BolshanRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script BolshanRespawn{
+    setrespawn(HEAL_LOCATION_BOLSHAN_CITY)
+    end
+}
+
+script BolshanCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

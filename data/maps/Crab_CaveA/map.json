@@ -1,0 +1,41 @@
+{
+  "id": "MAP_CRAB_CAVE_A",
+  "name": "Crab_CaveA",
+  "layout": "LAYOUT_SOUTH_CAVE_A",
+  "music": "MUS_RG_MT_MOON",
+  "region_map_section": "MAPSEC_ROUTE_107",
+  "requires_flash": false,
+  "weather": "WEATHER_VOLCANIC_ASH",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 25,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_CRAB_CAVE_B",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 4,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_SHILLFORD",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

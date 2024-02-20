@@ -42,12 +42,15 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
+
+// My flags
+
+#define FLAG_GOT_STARTER    0x20 // Got Starter
+#define FLAG_GETTING_STARTER    0x21 // While choosing starter
+#define FLAG_STARTERG    0x22 // Chose Grass
+#define FLAG_STARTERF    0x23 // Chose Fire
+#define FLAG_STARTERW    0x24 // Chose Water
+#define FLAG_HIDE_PORTREE_SAILOR    0x25 // Used to hide sailor during intro
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
@@ -652,15 +655,19 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
+
+// More of my flags
+
+
+#define FLAG_FIRST_BADGE  0x264 // Unused Flag
+#define FLAG_SECOND_BADGE  0x265 // Unused Flag
+#define FLAG_THIRD_BADGE  0x266 // Unused Flag
+#define FLAG_FOURTH_BADGE  0x267 // Unused Flag
+#define FLAG_FIFTH_BADGE  0x268 // Unused Flag
+#define FLAG_SIXTH_BADGE  0x269 // Unused Flag
+#define FLAG_SEVENTH_BADGE  0x26A // Unused Flag
+#define FLAG_EIGHTH_BADGE  0x26B // Unused Flag
+#define FLAG_ALL_BADGES  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
@@ -1218,7 +1225,10 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
+// My flags
+
+// Intro Sequence
+#define FLAG_UNUSED_0x493                                           0x493 // Unused
 #define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
 #define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag

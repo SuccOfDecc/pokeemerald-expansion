@@ -1,0 +1,41 @@
+{
+  "id": "MAP_ROCKY_ROAD",
+  "name": "Rocky_Road",
+  "layout": "LAYOUT_Rocky_Road",
+  "music": "MUS_ROUTE113",
+  "region_map_section": "MAPSEC_ROUTE_130",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_ROCKDALE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_BRETONA_DUNES",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

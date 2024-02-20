@@ -1,0 +1,164 @@
+raw `
+
+
+	.byte 0
+`
+
+mapscripts PortreeStarterHouse_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_D_GOING_TO_PICK, 0: OnEntryStarter]
+}
+
+script OnEntryStarter{
+	if(var(VAR_D_GOT_STARTER) == 0){
+			clearflag(FLAG_GOT_STARTER)
+			applymovement(OBJ_EVENT_ID_PLAYER, StarterWalkup)
+			waitmovement(0)
+			msgbox("You know the drill I'm sure.\n""Go ahead, choose your partner.")
+			setvar(VAR_D_CHOOSING_STARTER, 1)
+			setflag(FLAG_GETTING_STARTER)
+			setvar(VAR_D_GOING_TO_PICK, 1)
+			releaseall
+	}
+}
+
+script CantLeaveStarter{
+		msgbox("It's dangerous to go alone,\n""I shouldn't have to code this!")
+		waitmessage
+		closemessage
+		applymovement(OBJ_EVENT_ID_PLAYER, TurnBackUp)
+		waitmovement(0)
+		releaseall
+}
+
+
+script Portree_StarterBallG{
+	lockall
+	if(!(flag(FLAG_GOT_STARTER))){
+		showmonpic(SPECIES_DREEPY,10,3)
+		msgbox("Do you want to choose GRASS?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			givemon(SPECIES_DREEPY, 7, ITEM_EXP_SHARE)
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox("You chose GRASS")
+			setflag(FLAG_STARTERG)
+			removeobject(1)
+			call(ChoseStarterText)
+			releaseall
+		}
+		else{
+			releaseall
+			hidemonpic
+		}
+	releaseall	
+	}
+	else{
+		msgbox("Nuh uh! Just one.")
+		releaseall
+	}
+}
+
+script Portree_StarterBallF{
+	lockall
+	if(!(flag(FLAG_GOT_STARTER))){
+		showmonpic(SPECIES_SLUGMA,10,3)
+		msgbox("Do you want to choose FIRE?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			givemon(SPECIES_SLUGMA, 7, ITEM_EXP_SHARE)
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox("You chose FIRE")
+			setflag(FLAG_STARTERF)
+			removeobject(2)
+			call(ChoseStarterText)
+			releaseall
+		}
+		else{
+			releaseall
+			hidemonpic
+		}
+	releaseall	
+	}
+	else{
+		msgbox("Nuh uh! Just one.")
+		releaseall
+	}
+}
+
+script Portree_StarterBallW{
+	lockall
+	if(!(flag(FLAG_GOT_STARTER))){
+		showmonpic(SPECIES_SPHEAL,10,3)
+		msgbox("Do you want to choose WATER?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			givemon(SPECIES_SPHEAL, 7, ITEM_EXP_SHARE)
+			playfanfare(MUS_OBTAIN_ITEM)
+			msgbox("You chose WATER")
+			removeobject(3)
+			call(ChoseStarterText)
+			releaseall
+		}
+		else{
+			releaseall
+			hidemonpic
+		}
+	releaseall
+	}
+	else{
+		msgbox("Nuh uh! Just one.")
+		releaseall
+	}
+}
+
+script NicknamePartyMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+}
+
+movement StarterWalkup {
+	walk_up * 3
+	walk_right
+	face_up
+}
+
+movement TurnBackUp {
+	walk_up
+}
+
+movement PlayerTalkToProfStarter{
+	face_player
+}
+
+script ChoseStarterText{
+	setflag(FLAG_GOT_STARTER)
+	clearflag(FLAG_GETTING_STARTER)
+	call(NicknamePartyMon)
+	setflag(FLAG_ADVENTURE_STARTED)
+	setflag(FLAG_SYS_POKEDEX_GET)
+	special(EnableNationalPokedex)
+	setflag(FLAG_SYS_NATIONAL_DEX)
+	setflag(FLAG_SYS_POKEMON_GET)
+	setflag(FLAG_RECEIVED_RUNNING_SHOES)		
+	setflag(FLAG_SYS_B_DASH)
+	setvar(VAR_D_CHOOSING_STARTER, 0)
+	setvar(VAR_D_GOT_STARTER, 1)
+	clearflag(FLAG_HIDE_PORTREE_SAILOR)
+	applymovement(4, Common_Movement_FacePlayer)
+	msgbox("That's it! I won't keep you\n""any longer\p""Get out there and go!")
+}
+
+script TalkToStarterProf{
+	lockall
+	applymovement(4, PlayerTalkToProfStarter)
+	if(!(flag(FLAG_GOT_STARTER))){
+		msgbox("Go ahead! What are you waiting for?")
+	}
+	else{
+		msgbox("What was it about 'leave now'\n""that you didn't understand?")
+	}
+	releaseall
+}

@@ -1,0 +1,18 @@
+mapscripts DonkinCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION DonkinRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script DonkinRespawn{
+    setrespawn(HEAL_LOCATION_DONKIN_TOWN)
+    end
+}
+
+script DonkinCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

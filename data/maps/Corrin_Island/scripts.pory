@@ -1,0 +1,15 @@
+mapscripts Corrin_Island_MapScripts{
+
+}
+
+script CorrinFerrySailor{
+	lockall
+	msgbox("Shall I call the ferry to\n""take you back to Arrina?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES){
+			warp(MAP_ARRINA_TOWN, 20, 3)
+		}
+		else{
+			closemessage
+			releaseall
+		}
+}

@@ -1,0 +1,4 @@
+raw `
+SpookyHouse_MapScripts::
+	.byte 0
+`

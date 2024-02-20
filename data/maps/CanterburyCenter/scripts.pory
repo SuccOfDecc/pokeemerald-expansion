@@ -1,0 +1,18 @@
+mapscripts CanterburyCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION CanterburyRespawn
+    MAP_SCRIPT_ON_RESUME CableClub_OnResume
+}
+
+script CanterburyRespawn{
+    setrespawn(HEAL_LOCATION_CANTERBURY_TOWN)
+    end
+}
+
+script CanterburyCenterNurse{
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}

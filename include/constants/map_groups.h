@@ -591,6 +591,88 @@
 // gMapGroup_IndoorRoute124
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
-#define MAP_GROUPS_COUNT 34
+// dMapGroup_TownsAndRoutes
+#define MAP_PORTREE         (0 | (34 << 8))
+#define MAP_BOLSHAN_PATH    (1 | (34 << 8))
+#define MAP_BOLSHAN_CITY    (2 | (34 << 8))
+#define MAP_BIG_RIDGE       (3 | (34 << 8))
+#define MAP_CANTERBURY_TOWN (4 | (34 << 8))
+#define MAP_MIRA_RIVER      (5 | (34 << 8))
+#define MAP_MIRA_BAY_EAST   (6 | (34 << 8))
+#define MAP_MIRA_BAY_WEST   (7 | (34 << 8))
+#define MAP_SHILLFORD       (8 | (34 << 8))
+#define MAP_WEST_OCEAN      (9 | (34 << 8))
+#define MAP_ROCKDALE        (10 | (34 << 8))
+#define MAP_ROCKY_ROAD      (11 | (34 << 8))
+#define MAP_BRETONA_DUNES   (12 | (34 << 8))
+#define MAP_SANDFIELD       (13 | (34 << 8))
+#define MAP_WADDENS_COVE    (14 | (34 << 8))
+#define MAP_EAST_OCEAN      (15 | (34 << 8))
+#define MAP_STORMY_FIELD    (16 | (34 << 8))
+#define MAP_ARRINA_TOWN     (17 | (34 << 8))
+#define MAP_HOT_VALLEY      (18 | (34 << 8))
+#define MAP_DUNNING_HILL    (19 | (34 << 8))
+#define MAP_DONKIN_RUN      (20 | (34 << 8))
+#define MAP_SKAW_RIDGE      (21 | (34 << 8))
+#define MAP_CAPE_SKAW       (22 | (34 << 8))
+#define MAP_DONKIN_TOWN     (23 | (34 << 8))
+#define MAP_CORRIN_ISLAND   (24 | (34 << 8))
+#define MAP_LEAGUE_ISLAND   (25 | (34 << 8))
+
+// dMapGroup_DungeonsAndStuff
+#define MAP_PORTREE_FOREST        (0 | (35 << 8))
+#define MAP_CRAB_CAVE_A           (1 | (35 << 8))
+#define MAP_CRAB_CAVE_B           (2 | (35 << 8))
+#define MAP_SPOOKY_FOREST         (3 | (35 << 8))
+#define MAP_SPOOKY_HOUSE          (4 | (35 << 8))
+#define MAP_DRAGON_CAVE           (5 | (35 << 8))
+#define MAP_SAND_CAVE_A           (6 | (35 << 8))
+#define MAP_SAND_CAVE_B           (7 | (35 << 8))
+#define MAP_VICTORY_ROAD          (8 | (35 << 8))
+#define MAP_WADDENS_WOODS         (9 | (35 << 8))
+#define MAP_INSIDE_BOAT           (10 | (35 << 8))
+#define MAP_PORTREE_STARTER_HOUSE (11 | (35 << 8))
+
+// dMapGroup_Gyms
+#define MAP_GYM1CANTERBURY (0 | (36 << 8))
+#define MAP_GYM2SHILLFORD  (1 | (36 << 8))
+#define MAP_GYM3WADDEN     (2 | (36 << 8))
+#define MAP_GYM4ARRINA     (3 | (36 << 8))
+#define MAP_GYM5SANDFIELD  (4 | (36 << 8))
+#define MAP_GYM6CORRIN     (5 | (36 << 8))
+#define MAP_GYM7SKAW       (6 | (36 << 8))
+#define MAP_GYM8DONKIN     (7 | (36 << 8))
+
+// dMapGroup_PortreeIndoor
+#define MAP_PORTREE_NAME_RATER     (0 | (37 << 8))
+#define MAP_PORTREE_MOVE_RELEARNER (1 | (37 << 8))
+#define MAP_PORTREE_CENTER         (2 | (37 << 8))
+#define MAP_PORTREE_MART           (3 | (37 << 8))
+
+// dMapGroup_BolshanRidgeIndoor
+#define MAP_BOLSHAN_CENTER (0 | (38 << 8))
+#define MAP_ARRINA_CENTER  (1 | (38 << 8))
+#define MAP_MIRA_CENTER    (2 | (38 << 8))
+
+// dMapGroup_ShillfordRockdaleIndoor
+#define MAP_SHILLFORD_CENTER  (0 | (39 << 8))
+#define MAP_ROCKDALE_CENTER   (1 | (39 << 8))
+#define MAP_CANTERBURY_CENTER (2 | (39 << 8))
+
+// dMapGroup_WaddensIndoor
+#define MAP_WADDENS_CENTER (0 | (40 << 8))
+
+// dMapGroup_SandfieldDunningIndoor
+#define MAP_SANDFIELD_CENTER (0 | (41 << 8))
+#define MAP_DUNNING_CENTER   (1 | (41 << 8))
+
+// dMapGroup_SkawDonkinIndoor
+#define MAP_SKAW_CENTER   (0 | (42 << 8))
+#define MAP_DONKIN_CENTER (1 | (42 << 8))
+
+// dMapGroup_CorrinIndoor
+#define MAP_CORRIN_CENTER (0 | (43 << 8))
+
+#define MAP_GROUPS_COUNT 44
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

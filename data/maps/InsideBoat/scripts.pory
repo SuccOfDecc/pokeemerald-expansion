@@ -1,0 +1,18 @@
+mapscripts InsideBoat_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_D_INSIDE_BOAT, 0: IntroBoatSetFlags]
+}
+
+script IntroBoatSetFlags{
+	if(!(flag(FLAG_HIDE_PORTREE_SAILOR))){
+		setflag(FLAG_HIDE_PORTREE_SAILOR)
+		setrespawn(HEAL_LOCATION_BOLSHAN_CITY)
+		call(PlayTestFlags)
+		setvar(VAR_D_INSIDE_BOAT, 1)		
+	}
+}
+
+script PlayTestFlags{
+	setflag(FLAG_FOURTH_BADGE)
+	setflag(FLAG_THIRD_BADGE)
+}

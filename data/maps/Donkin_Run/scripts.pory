@@ -1,0 +1,4 @@
+raw `
+Donkin_Run_MapScripts::
+	.byte 0
+`
